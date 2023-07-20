@@ -1,0 +1,14 @@
+/node_modules/*
+
+dist/*
+build/*
+coverage/*
+
+public/
+
+*.css
+*.svg
+
+src/vite-env.d.ts
+tsconfig.json
+tsconfig.node.json
