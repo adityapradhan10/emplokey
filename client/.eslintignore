@@ -10,5 +10,8 @@ public/
 *.svg
 
 src/vite-env.d.ts
-tsconfig.json
-tsconfig.node.json
+
+.gitignore
+.prettierignore
+.eslintignore
+

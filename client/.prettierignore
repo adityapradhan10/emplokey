@@ -6,3 +6,7 @@ coverage
 **/*.html
 
 *.svg
+
+.gitignore
+.prettierignore
+.eslintignore

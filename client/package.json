@@ -9,9 +9,9 @@
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json,scss} --config .prettierrc",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "cd.. && husky install"
   },
-  "pre-commit": ["format", "lint:fix"],
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -33,9 +33,16 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
-    "pre-commit": "^1.2.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "prettier": "3.0.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.0"
+  },
+  "lint-staged": {
+    "**/*": [
+      "npm run format",
+      "npm run lint:fix"
+    ]
   }
 }
