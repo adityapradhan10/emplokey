@@ -1,5 +1,11 @@
+import { Button } from '@/components/ui/button';
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className='h-full flex justify-center items-center bg-primary'>
+      <Button variant='outline'>Hello World</Button>
+    </div>
+  );
 }
 
 export default App;
