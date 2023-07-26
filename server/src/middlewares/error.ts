@@ -9,9 +9,11 @@ export default (
 ): void => {
   res.status(error.status || 500);
   res.send({
-    error: {
+    result: {
       status: error.status || 500,
-      message: error.message,
+      payload: {
+        message: error.message,
+      },
     },
   });
 };
