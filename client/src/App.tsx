@@ -1,10 +1,11 @@
-import { Button } from '@/components/ui/Button';
+import { ThemeProvider } from '@/context/ThemeProvider';
+import Routing from './routes';
 
 function App() {
   return (
-    <div className='h-full flex justify-center items-center bg-primary'>
-      <Button variant='outline'>Hello World</Button>
-    </div>
+    <ThemeProvider>
+      <Routing />
+    </ThemeProvider>
   );
 }
 
